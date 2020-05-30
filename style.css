@@ -1,3 +1,4 @@
+/*iPhone 11 pro max color palettes you can change to: Midnightgreen #004953, Silver #ebebe3, Space grey #535150 & Rose gold #fad7bd*/
 body, html {
 	margin: 0;
 	padding: 0;
@@ -12,6 +13,7 @@ body{
 	font-family: roboto;
 	font-size: 0.6em;
 }
+/*alternate background colors and border colors here */
 .iphone-container{
 	width: 77.8mm;
 	height: 158mm;
@@ -20,6 +22,7 @@ body{
 	border: 9px #004953 ridge;
 	position: relative;
 }
+/*alternate with different wallpapers here */
 .screen{
 	background-image: url("img/spider3.jpg");
 	background-repeat: no-repeat;
@@ -44,6 +47,7 @@ body{
 		top: 90px;
 		left: -12px;
 	}
+   /*change ringer, volume up, volume down and power button colors here to match your design color */
 	.ringer{
 		width:4px;
 		height: 25px;
