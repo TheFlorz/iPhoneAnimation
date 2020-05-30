@@ -1,0 +1,268 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	color: white;
+	font-family: roboto;
+	font-size: 0.6em;
+}
+.iphone-container{
+	width: 77.8mm;
+	height: 158mm;
+	background-color: black;
+	border-radius: 40px;
+	border: 9px #004953 ridge;
+	position: relative;
+}
+.screen{
+	background-image: url("img/spider3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	border-radius: 35px;
+	padding: 10px;
+	display: inline-grid;
+    grid-template-rows: 1fr 2fr 2fr 4fr 1.5fr;
+	grid-template-columns: repeat(4, 1fr); 
+	grid-template-areas: 
+      "time . . network"
+      "facetime photos camera mail"
+      "clock tv settings wallet"
+      ". . . ."
+      "phone message maps calculator";
+	}
+	.side-button{
+		position: absolute;
+		top: 90px;
+		left: -12px;
+	}
+	.ringer{
+		width:4px;
+		height: 25px;
+		background-color: #004953;
+		border-radius: 5px;
+	}
+	.volume-up{
+		width: 4px;
+		height: 30px;
+		background-color: #004953;
+		margin-top: 30px;
+		border-radius: 3px;
+	}
+	.volume-down{
+		width: 4px;
+		height: 30px;
+		background-color: #004953;
+		margin-top: 10px;
+		border-radius: 3px;
+	}
+    .power-button{
+    	width: 4px;
+    	height: 40px;
+    	background-color: #004953;
+    	margin-top: 10px;
+    	position: absolute;
+    	top: 120px;
+    	left: 303px;
+    	border-radius: 3px;
+    }
+
+
+	.topbar{
+		width: 100%;
+		height: 2rem;
+		position: absolute;
+		text-align: center;
+		background-color:
+		border-radius: 50%;
+	}
+	.speaker{
+		background-color: gray;
+		border-radius: 40px;
+		height: 5px;
+		width: 35px;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.flash{
+		background-color: gray;
+		border-radius: 20px;
+		height: 8px;
+		width: 8px;
+		display: inline-block;
+		margin-left: 5px;
+	}
+
+
+	.time{
+		grid-area: time;
+		padding-top: 5px;
+		margin-left: 2px;
+		position: relative;
+	}
+	.network{
+		grid-area: network;
+		padding-left: 10px;
+		padding-top: 5px;
+		position: relative;
+		margin-right: 2px;
+	}
+	 .network5,.network2, .network3, .network4{
+		background-color: white;
+		height: 3px;
+		width: 2px;
+	}
+	
+	 .network2, .network3, .network4, .network5{
+		position: absolute;
+		margin-left:2px;
+		margin-bottom: 5px; 
+	}
+	.network2{
+		height: 5px;
+		left: 18px;
+		top: 8px;
+	}
+    .network3{
+    	height: 7px;
+    	left: 21px;
+    	top: 6px;
+
+    }
+    .network4{
+    	height: 9px;
+    	left: 24px;
+    	top: 4px;
+    }
+    .network5{
+        height: 11px;
+    	left: 27px;
+    	top: 2px;
+    }
+    .LTE{
+    	position: absolute;
+    	top: 2.5px;
+    	left: 33px;
+    }
+     .battery{
+     	top: 6px;
+     	position: absolute;
+     	left: 52px;
+     	
+     }
+     .battery1{
+     	background-color: white;
+     	width: 15px;
+     	height: 6px;
+     	border: 2px gray;
+     }
+     .battery2{
+     	background-color: white;
+     	width: 1px;
+     	height: 3px;
+     	border: 1px gray;
+     	left: 16px;
+     	top: 2px;
+     	position:absolute;
+     }
+
+img{
+	width: 45px;
+	padding: 5px;
+}
+
+.facetime{
+	grid-area: facetime;
+}
+.facetime::after{
+	content: "FaceTime";
+	margin: 5px;
+}
+.photos{
+	grid-area: photos;
+}
+.photos::after{
+	content: "Photos";
+	margin: 12px;
+}
+.clock{
+	grid-area: clock;
+}
+.clock::after{
+	content: "Clock";
+	margin: 15px;
+}
+.mail{
+	grid-area: mail;
+}
+	.mail::after{
+		content: "Mail";
+		margin: 20px;
+	}
+.tv{
+	grid-area: tv;
+}
+.tv::after{
+	content: "TV";
+	margin: 23px;
+}
+.camera{
+	grid-area: camera;
+}
+.camera::after{
+	content: "Camera";
+	margin: 10px;
+}
+.settings{
+	grid-area: settings;
+}
+.settings::after{
+	content: "Settings";
+	margin: 8px;
+}
+.wallet{
+	grid-area: wallet;
+}
+.wallet::after{
+	content: "Wallet";
+	margin: 12px;
+}
+.maps{
+	grid-area: maps;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.phone{
+	grid-area: phone;
+	padding-left: 5px;
+	padding-top: 5px;
+
+}
+.message{
+	grid-area: message;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.calculator{
+	grid-area: calculator;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.bottom-bar{
+	grid-row-start: 5;
+	grid-row-end: 6;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	background-color: gray;
+	border-radius: 20px;
+	opacity: 0.2;
+}
