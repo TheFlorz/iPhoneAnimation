@@ -81,8 +81,8 @@ body{
 
 /*The notch*/
 	.topbar{
-		width: 100%;
-		height: 2rem;
+		width: 55%;
+		height: 1.5rem;
 		position: absolute;
 		text-align: center;
 		background-color: black;
